@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MH Admin - Add Monster</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        background: #333;
+        color: white;
+      }
+      .form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: #444;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        width: 100%;
+        padding: 15px;
+        background: #00ff96;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #00cc78;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>🦖 Add New Monster</h2>
+
+      <label>ID (e.g. rathalos)</label>
+      <input type="text" id="mId" placeholder="rathalos (no spaces)" />
+
+      <label>Name</label>
+      <input type="text" id="mName" placeholder="e.g. Rathalos" />
+      ```
+
+      <label>Thumbnail Image URL (Card)</label>
+      <input type="text" id="mThumb" placeholder="https://..." />
+
+      <label>Detail Image URL (Book)</label>
+      <input type="text" id="mDetail" placeholder="https://..." />
+
+      <label>Description</label>
+      <textarea
+        id="mDesc"
+        rows="4"
+        placeholder="Monster description..."
+      ></textarea>
+
+      <label>Weakness Text</label>
+      <input type="text" id="mWeak" placeholder="e.g. Dragon ⭐⭐⭐" />
+
+      <label>Weakness Chart Image URL (Optional)</label>
+      <input type="text" id="mChart" placeholder="https://...chart.jpg" />
+
+      <button id="addBtn">Add to Database</button>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
